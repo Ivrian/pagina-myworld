@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.myworld-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.myworld-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%
+}
+.myworld-phone img {
+    height: 50rem;
+}
+
+.myworld-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+    border-radius: 20%;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D3D0CB;
+    width: 100%;
+    padding: 1.3rem 0;
+    padding: 1px solid #E7E5DF;
+    border-radius: 2%;
+    }
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.myworld-logo {
+    height: 6rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
+    margin-bottom: 1px;
+}
+
+.myworld-login {
+    background-color: #B124D6;
+    color: #E7E5DF;
+    padding: 8px;
+    border-radius:4px
+}
+
+.myworld-logout {
+    color: #B124D6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: #393E41;
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 13rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('./img/pngfind.com-download-on-the-app-2690039.png')
+}
+
+.app-download:nth-child(2){
+    background-image: url('./img/google-play-badge.png')
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .myworld-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #DDE3DC;
+    }
+
+    .myworld-wrapper {
+        width: 90%
+    }
+    
+    myworld-phone {
+        display: none;
+    }
+
+    .myworld-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
+    
